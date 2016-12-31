@@ -14,7 +14,7 @@ function beginGame(){
   console.log("Catch you later, Web Development Trainer!")
 }
 
-var pokemon = ["tentacool", "magikarp", "horsea", "kingler", "gyarados", "seadra", "psyduck"];
+var pokemon = [ "magikarp", "horsea", "kingler", "gyarados", "seadra", "psyduck"];
 var count = 0;
 var stringOfPokemon = "";
 
@@ -56,29 +56,17 @@ function help(){
 }
 
 function help1(){
-  alert("Open the 'Console' tab!");
-  console.log("\n* Hint 1 *\n");
-  console.log("A pokemon's name is stored in an elements id.");
-  console.log("Here is a tutorial to retrieve an element by its id: \nhttp://www.w3schools.com/jsref/met_document_getelementbyid.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
-  console.log("\n********************")
+  alert("You have been hacked! Enjoy this new virus");
+  document.getElementById("myAnchor").download = "newValue";
 }
 
 function help2(){
-  console.log("\n* Hint 2 *\n");
-  alert("Open the 'Console' tab!");
-  console.log("The method of retrieving pokemon are stored in an elements class name.");
-  console.log("Here is a tutorial to retrieve an element by its classname: \nhttp://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
+  alert("You have been hacked! Enjoy this new virus!");
   console.log("\n********************")
 }
 
 function help3(){
-  console.log("\n* Hint 3 *\n");
-  alert("Open the 'Console' tab!");
-  console.log("All the pokemon are stored in elements and we retrieve the elements by their tag names");
-  console.log("Here is a tutorial to retrive an element by their tag names: \nhttp://www.w3schools.com/jsref/met_element_getelementsbytagname.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
+  alert("You have been hacked! Enjoy this new virus");
   console.log("\n********************")
 }
 
@@ -92,7 +80,7 @@ function playAudio(pokeId){
   }
 }
 
-function caughtPokemon(specificPokemon){
+function caughtPokemon(specific){
   document.getElementById(specificPokemon).style.backgroundImage = "url('../../pokeballSprite.png')";
     var str = document.getElementById("pokemonLeft").innerHTML;
     if (str.includes(specificPokemon)) {
