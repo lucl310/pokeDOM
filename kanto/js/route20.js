@@ -3,13 +3,13 @@ function beginGame(){
   alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
   console.log("\n")
   console.log("Professor Oak: Hello Trainer! You made it just on time!");
-  console.log("I was in the middle of testing how Pokemon are able to be traded wirelessly.");
-  console.log("In that process, they ran away... into your web application (I mean... it does look like their home...)");
+  console.log("I was in the middle of testing... uhh unspecified things...");
+  console.log("In that process, they (the pokemon) ran away... into your website (I mean... it does look like their home... not really)");
   console.log("Luckily, you came right as they escaped and, since you're a web developer, you'll have an easier time finding them for me!");
   alert("Trainer received PokeDOM!");
   console.log("Use your PokeDOM I've given you to find the hidden Pokemon!");
   console.log("Let one of your instructors know when you're finished and they'll tell me the tricks to catching the Pokemon!");
-  console.log("I have to go surfing for the rest of the Pokemon in the World Wide Web!!!");
+  console.log("I'm just gonna go play quake and make you do all of the work like the average prodject manager and if you don't complete this within the hour, I will download a virus onto your computer and fire you");
   console.log("Oh yeah! If you're lost... Start by selecting the 'PokeDOM MANUAL'!");
   console.log("Catch you later, Web Development Trainer!")
 }
@@ -97,6 +97,9 @@ function caughtPokemon(specific){
       document.getElementById("pokemonLeft").innerHTML = res;
     }
 }
+  function virus(time) {
+    console.log("You took too long! Hope you enjoy the virus!")
+  }
 
 beginGame();
 fillGear();
