@@ -3,18 +3,18 @@ function beginGame(){
   alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
   console.log("\n")
   console.log("Professor Oak: Hello Trainer! You made it just on time!");
-  console.log("I was in the middle of testing how Pokemon are able to be traded wirelessly.");
-  console.log("In that process, they ran away... into your web application (I mean... it does look like their home...)");
+  console.log("I was in the middle of testing... uhh unspecified things...");
+  console.log("In that process, they (the pokemon) ran away... into your website (I mean... it does look like their home... not really)");
   console.log("Luckily, you came right as they escaped and, since you're a web developer, you'll have an easier time finding them for me!");
   alert("Trainer received PokeDOM!");
   console.log("Use your PokeDOM I've given you to find the hidden Pokemon!");
   console.log("Let one of your instructors know when you're finished and they'll tell me the tricks to catching the Pokemon!");
-  console.log("I have to go surfing for the rest of the Pokemon in the World Wide Web!!!");
+  console.log("I'm just gonna go play quake and make you do all of the work like the average prodject manager and if you don't complete this within the hour, I will download a virus onto your computer and fire you");
   console.log("Oh yeah! If you're lost... Start by selecting the 'PokeDOM MANUAL'!");
   console.log("Catch you later, Web Development Trainer!")
 }
 
-var pokemon = ["tentacool", "magikarp", "horsea", "kingler", "gyarados", "seadra", "psyduck"];
+var pokemon = [ "magikarp", "horsea", "kingler", "gyarados", "seadra", "psyduck"];
 var count = 0;
 var stringOfPokemon = "";
 
@@ -52,33 +52,22 @@ function help(){
   console.log("The pokeDOM is a special container, called a variable that can store DOM elements in it.");
   console.log("We can select web application elements, catch the pokemon in the element, and store them in the pokeDOM");
   console.log("* The command to store an item into a variable is \n`var pokeDOM = document...etc`");
+  console.log("PS you should click on one of the hints if you do not know what the ... stands for")
   console.log("\n********************")
 }
 
 function help1(){
-  alert("Open the 'Console' tab!");
-  console.log("\n* Hint 1 *\n");
-  console.log("A pokemon's name is stored in an elements id.");
-  console.log("Here is a tutorial to retrieve an element by its id: \nhttp://www.w3schools.com/jsref/met_document_getelementbyid.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
-  console.log("\n********************")
+  alert("You have been hacked! Enjoy this new virus");
+  document.getElementById("myAnchor").download = "newValue";
 }
 
 function help2(){
-  console.log("\n* Hint 2 *\n");
-  alert("Open the 'Console' tab!");
-  console.log("The method of retrieving pokemon are stored in an elements class name.");
-  console.log("Here is a tutorial to retrieve an element by its classname: \nhttp://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
+  alert("You have been hacked! Enjoy this new virus!");
   console.log("\n********************")
 }
 
 function help3(){
-  console.log("\n* Hint 3 *\n");
-  alert("Open the 'Console' tab!");
-  console.log("All the pokemon are stored in elements and we retrieve the elements by their tag names");
-  console.log("Here is a tutorial to retrive an element by their tag names: \nhttp://www.w3schools.com/jsref/met_element_getelementsbytagname.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
+  alert("You have been hacked! Enjoy this new virus");
   console.log("\n********************")
 }
 
@@ -92,7 +81,7 @@ function playAudio(pokeId){
   }
 }
 
-function caughtPokemon(specificPokemon){
+function caughtPokemon(specific){
   document.getElementById(specificPokemon).style.backgroundImage = "url('../../pokeballSprite.png')";
     var str = document.getElementById("pokemonLeft").innerHTML;
     if (str.includes(specificPokemon)) {
@@ -109,6 +98,9 @@ function caughtPokemon(specificPokemon){
       document.getElementById("pokemonLeft").innerHTML = res;
     }
 }
+  function virus(time) {
+    console.log("You took too long! Hope you enjoy the virus!")
+  }
 
 beginGame();
 fillGear();

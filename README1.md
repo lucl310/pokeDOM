@@ -1,3 +1,5 @@
+I think that if I did not know any of the inspect element or dom tricks, this would be very challenging. I actually did not know what the ... of document...etc was, so I just went into the elements of IE and just highlighted the spans and onclicks to tell me where they were. some improvments you could make to this game would be to add more pokemon, make it so that the background will cover the highlighting of the element section, unclump them, and make a bground color. there is also a bug in which  Also, I like how you randomized the positions
+Also, I have made the said improvments into the code Please use this as your source code
 function beginGame(){
   alert("Hello Trainer!");
   alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
@@ -14,7 +16,7 @@ function beginGame(){
   console.log("Catch you later, Web Development Trainer!")
 }
 
-var pokemon = ["tentacool", "magikarp", "horsea", "kingler", "gyarados", "seadra", "psyduck"];
+var pokemon = [ "magikarp", "horsea", "kingler", "gyarados", "seadra", "psyduck"];
 var count = 0;
 var stringOfPokemon = "";
 
@@ -56,29 +58,17 @@ function help(){
 }
 
 function help1(){
-  alert("Open the 'Console' tab!");
-  console.log("\n* Hint 1 *\n");
-  console.log("A pokemon's name is stored in an elements id.");
-  console.log("Here is a tutorial to retrieve an element by its id: \nhttp://www.w3schools.com/jsref/met_document_getelementbyid.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
-  console.log("\n********************")
+  alert("You have been hacked! Enjoy this new virus");
+  document.getElementById("myAnchor").download = "newValue";
 }
 
 function help2(){
-  console.log("\n* Hint 2 *\n");
-  alert("Open the 'Console' tab!");
-  console.log("The method of retrieving pokemon are stored in an elements class name.");
-  console.log("Here is a tutorial to retrieve an element by its classname: \nhttp://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
+  alert("You have been hacked! Enjoy this new virus!");
   console.log("\n********************")
 }
 
 function help3(){
-  console.log("\n* Hint 3 *\n");
-  alert("Open the 'Console' tab!");
-  console.log("All the pokemon are stored in elements and we retrieve the elements by their tag names");
-  console.log("Here is a tutorial to retrive an element by their tag names: \nhttp://www.w3schools.com/jsref/met_element_getelementsbytagname.asp");
-  console.log("Don't forget to store this value into the pokeDOM and print its value!");
+  alert("You have been hacked! Enjoy this new virus");
   console.log("\n********************")
 }
 
@@ -92,7 +82,7 @@ function playAudio(pokeId){
   }
 }
 
-function caughtPokemon(specificPokemon){
+function caughtPokemon(specific){
   document.getElementById(specificPokemon).style.backgroundImage = "url('../../pokeballSprite.png')";
     var str = document.getElementById("pokemonLeft").innerHTML;
     if (str.includes(specificPokemon)) {
